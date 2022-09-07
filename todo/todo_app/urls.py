@@ -7,7 +7,7 @@ urlpatterns = [
     path('list/', ProjectList.as_view(), name='project-list'),
     path('<int:pk>/', ProjectDetail.as_view(), name='project-details'),
     path('<int:pk>/assign/', AssignUser.as_view(), name='assign-user'),
-    path('<int:pk>/remove-assigned/', RemoveAssigned.as_view(), name='assign-user'),
+    path('<int:pk>/de-assign/', RemoveAssigned.as_view(), name='de-assign'),
 
     path('task/<int:pk>/', TaskDetail.as_view(), name='task-details'),
     path('<int:pk>/task-create/', TaskCreate.as_view(), name='task-create'),
