@@ -5,7 +5,6 @@ A portfolio project I am developing as part of my Django REST Framework study. T
 I'm currently working / planning on the following
 
 - API Documentation
-- JWT Authentication
 - Throtting
 - Pagination
 - Deployment
