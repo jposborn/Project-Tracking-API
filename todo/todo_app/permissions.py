@@ -2,7 +2,7 @@ from rest_framework import permissions
 from todo_app.models import Project, AssignedUser, Task
 
 
-# If user is Admin can edit otherwise read only
+# If user is Admin can edit otherwise read only.
 class IsAdminOrReadOnly(permissions.IsAdminUser):
 
     def has_permission(self, request, view):  # has_permission  for general access to api

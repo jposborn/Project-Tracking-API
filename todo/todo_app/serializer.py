@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from django.contrib.auth.models import User
+# from django.contrib.auth.models import User
 from datetime import date
 
 from todo_app.models import Project, Task, AssignedUser

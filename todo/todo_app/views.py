@@ -23,7 +23,7 @@ class TaskCreate(generics.CreateAPIView):
         return Task.objects.all()
 
     def perform_create(self, serializer):
-        project_pk = self.kwargs.get('pk')  # get pk of project passed from url
+        project_pk = self.kwargs.get('pk')  # get pk of project passed from url.
         project = Project.objects.get(pk=project_pk)  # set project variable as called project object
 
         task_due_date = datetime.strptime((self.request.data['task_due_date']), '%Y-%m-%d').date()
