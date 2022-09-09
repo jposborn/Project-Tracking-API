@@ -6,5 +6,4 @@ I'm currently working / planning on the following
 
 - API Documentation
 - Throtting
-- Pagination
 - Deployment
